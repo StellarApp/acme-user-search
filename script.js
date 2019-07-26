@@ -9,7 +9,9 @@ input.addEventListener('search', () => {
     let html = ''
     window.location.hash = input.value;
 
-    // tbody.innerHTML = '<td><tr>test</tr></td>'
+    // create function clear()
+    //run it when button clicked or here
+    
     thead.style.visibility = "visible";
     fetch(`${API}${input.value}`)
         .then (response => response.json())
