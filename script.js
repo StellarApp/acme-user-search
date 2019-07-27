@@ -8,9 +8,6 @@ const thead = document.querySelector('thead');
 input.addEventListener('search', () => {
     let html = ''
     window.location.hash = input.value;
-
-    // create function clear()
-    //run it when button clicked or here
     
     thead.style.visibility = "visible";
     fetch(`${API}${input.value}`)
